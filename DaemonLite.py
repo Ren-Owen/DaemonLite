@@ -146,7 +146,7 @@ class DaemonLite(object) :
                 if os.path.exists(self.pidFile):
                     os.remove(self.pidFile)
             else :
-                print(str(err))
+                print(str(e))
                 sys.exit(1)
 
         if self.verbose >= 1:
